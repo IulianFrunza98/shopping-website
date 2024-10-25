@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Project 1/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <title>New Style</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="logo">
+      <a href="/Project 1/HomePage/home.html"><img
+          src="/Project 1/images/Opera_Snapshot_2024-05-17_171741_smashinglogo.com-removebg-preview.png" alt="logo"></a>
+    </div>
+    <nav class="nav">
+      <ul>
+        <li><a class="nav-link" href="/Project 1/HomePage/home.html">Home</a></li>
+        <li><a class="nav-link" href="/Project 1/CategoriesPage/categories.html">Products</a></li>
+        <li><a class="nav-link" href="/Project 1/OffersPage/offers.html">Offers</a></li>
+        <li><a class="nav-link" href="/Project 1/ContactPage/contact.html">Contact</a></li>
+        <li><a href="/Project 1/LoginPage/login.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="/Project 1/Whishlist Page/wish.html"><i class="fa-solid fa-heart"></i></a></li>
+        <li><a href="/Project 1/CartPage/cart.html"><i class="fa-solid fa-bag-shopping"></i> <span id="count">0</span></a></li>
+      </ul>
+    </nav>
+    <div class="hamburgerButton">
+      <a href="#"><img src="/Project 1/images/hamburger copy.png" alt="menu"></a>
+    </div>
+  </header>
+  
+  <div class="filterIcon">
+    <h3>Explore our Products</h3>
+    <i class="bi bi-filter"></i>
+  </div>
+  <div class="exploreWrapper">
+    <div class="leftColFilter">
+      <h5 class="filter">Filter</h5>
+      <div class="divider"></div>
+
+      <div class="category">
+        <h5>Category<i class="fa-solid fa-minus"></i></h5>
+        <input type="radio" id="coats" name="category" value="Coats" checked>
+        <label id="coats" for="coats">Plus Size Coats</label><br>
+        <input type="radio" id="jeans" name="category" value="Jeans">
+        <label for="jeans">Plus Size Jeans</label><br>
+        <input type="radio" id="jackets" name="category" value="Jackets">
+        <label for="jackets">Plus Size Jackets</label><br>
+        <input type="radio" id="t-shirts" name="category" value="T-Shirts">
+        <label for="t-shirts">Plus Size T-Shirts</label>
+        <p class="view">+ View More</p>
+      </div>
+
+      <div class="collection">
+        <h5>New Style Collection<i class="fa-solid fa-minus"></i></h5>
+        <input type="checkbox" id="brand1" name="brand1" value="Zara">
+        <label for="brand1">Zara</label><br>
+        <input type="checkbox" id="brand2" name="brand2" value="H&M">
+        <label for="brand2">H&M</label><br> 
+        <input type="checkbox" id="brand3" name="brand3" value="Berska">
+        <label for="brand3">Berska</label><br>
+        <input type="checkbox" id="brand4" name="brand4" value="Pull and Bear">
+        <label for="brand4">Pull and Bear</label>
+        <p class="view">+ View More</p>
+      </div>
+
+      <div class="size">
+        <h5>Size<i class="fa-solid fa-minus"></i></h5>
+        <input type="checkbox" id="size1" name="size1" value="L">
+        <label for="size1">L</label><br>
+        <input type="checkbox" id="size2" name="size2" value="S">
+        <label for="size2">S</label><br> 
+        <input type="checkbox" id="size3" name="size3" value="M">
+        <label for="size3">M</label><br> 
+        <input type="checkbox" id="size4" name="size4" value="XL">
+        <label for="size4">XL</label>
+        <p class="view">+ View More</p>
+      </div>
+
+      <div class="material">
+        <h5>Material<i class="fa-solid fa-minus"></i></h5>
+        <input type="checkbox" id="material1" name="material1" value="Satin">
+        <label for="material1">Satin</label><br>
+        <input type="checkbox" id="material2" name="material2" value="Sequins">
+        <label for="material2">Sequins</label><br>    
+        <input type="checkbox" id="material3" name="material3" value="Polyester">
+        <label for="material3">Polyester</label><br>
+        <input type="checkbox" id="material4" name="material4" value="Organza">
+        <label for="material4">Organza</label>
+        <p class="view">+ View More
+      </div>
+        <h5>Price Range (DOLLARS)</h5>
+        <div class="slidecontainer">
+          <label for="slider"></label>
+          <input type="range" max="300" name="slider" id="slider" class="slider">
+        </div>
+        <span id="current">
+          Current Value: 150$
+        </span>
+      <label for="submit">
+        <button class="apllyFilter" type="button" value="Apply Filters">Apply Filters</button>
+      </label>
+    </div>
+
+    <div class="rightColExplore">
+      <div class="exploreGallery">
+        <div class="deals">
+          <img src="/Project 1/images/dressexplore.png" alt="jacket">
+          <h3>Ivy Dress Red</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$55.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow"><a href="#">Buy Now</a></button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/jeansexplore.png" alt="jeans">
+          <h3>Calvin Klein Jeans</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$100.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/leatherjacketexplore.png" alt="leatherjacket">
+          <h3>Leather Jacket</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$25.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/heelsexplore.png" alt="shoes">
+          <h3>Women's Platform</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$100.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/denimskirtexplore.png" alt="skirt">
+          <h3>Denim Skirt</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$50.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/coatOffer1.png" alt="coat">
+          <h3>Gray Coat</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$120.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/jacketexplore.png" alt="jacket">
+          <h3>Suede Jacket </h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$70.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+        <div class="deals">
+          <img src="/Project 1/images/TshirtOffer1.png" alt="tshirt">
+          <h3>Gorglitter T-Shirt</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h6>$20.00</h6>
+          <ul>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star checked"></i></li>
+            <li><i class="fa fa-star"></i></li>
+          </ul>
+          <button class="buyNow">Buy Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footerFlex">
+      <div class="footerContainer">
+        <h3>TOP CATEGORIES</h3>
+        <a href="#"><P>Women Jeans</P></a>
+        <a href="#"><P>Men Jeans</P></a>
+        <a href="#"><P>Coats</P></a>
+        <a href="#"><p>Jackets</p></a>
+      </div>
+      <div class="footerContainer">
+        <h3>HELP</h3>
+        <a href="#"><P>Delivery and Returns</P></a>
+        <a href="#"><P>Secure payments</P></a>
+        <a href="#"><P>Track and order</P></a>
+        <a href="/Project 1/ContactPage/contact.html"><p>Contact us</p></a>
+      </div>
+      <div class="footerContainer">
+        <h3>ABOUT US</h3>
+        <a href="#"><P>Careers</P></a>
+        <a href="#"><P>Responsability</P></a>
+      </div>
+    </div>
+    <div class="followUs">
+      <h3>FOLLOW US</h3>
+    </div>
+    <div class="footerEnd">
+      <div class="socialMedia">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+      <div class="privacyPolicy">
+        <a href="#"><p>Terms and conditions of Sales</p></a>
+        <a href="#"><p>Privacy Policy</p></a>
+        <a href="#"><p>Cokies Policy</p></a>
+        <a class="backTopBtn" href="#"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="/Project 1/script.js"></script>
+</body>
